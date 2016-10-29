@@ -21,7 +21,7 @@ Inherits Thread
 		  
 		  // Create Mailgun URL
 		  Dim _url As Text
-		  _url = "https://api.mailgun.net/v3/" + Mailgun.MailgunDomain + "/messages"
+		  _url = "https://api.mailgun.net/v3/" + MailgunX.MailgunDomain + "/messages"
 		  
 		  // Create HTTP socket for Mailgun
 		  pHTTP = New Xojo.Net.HTTPSocket
@@ -84,7 +84,7 @@ Inherits Thread
 		Private Function mHTTP_AuthenticationRequired(Sender As Xojo.Net.HTTPSocket, Realm As Text, ByRef Name As Text, ByRef Password As Text) As Boolean
 		  // Set Mailgun API authentication parameters.
 		  Name = "api"
-		  Password = Mailgun.MailgunApiKey
+		  Password = MailgunX.MailgunApiKey
 		  
 		  Return True
 		End Function

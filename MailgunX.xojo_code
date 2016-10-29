@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Mailgun
+Protected Module MailgunX
 	#tag Note, Name = About
 		MailgunX
 		by 1701 Software, Inc. 
@@ -76,7 +76,12 @@ Protected Module Mailgun
 		#tag ViewProperty
 			Name="MailgunApiKey"
 			Group="Behavior"
-			Type="Integer"
+			Type="Text"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="MailgunDomain"
+			Group="Behavior"
+			Type="Text"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"

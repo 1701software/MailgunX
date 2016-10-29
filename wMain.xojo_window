@@ -476,10 +476,10 @@ Begin Window wMain
       Visible         =   True
       Width           =   80
    End
-   Begin Mailgun.SendEmail mail
+   Begin MailgunX.SendEmail mail
       Index           =   -2147483648
       LockedInPosition=   False
-      Priority        =   1
+      Priority        =   5
       Scope           =   0
       StackSize       =   0
       TabPanelIndex   =   0
@@ -493,8 +493,8 @@ End
 #tag Events btnSet
 	#tag Event
 		Sub Action()
-		  Mailgun.MailgunApiKey = txtMailgunApiKey.Text.ToText()
-		  Mailgun.MailgunDomain = txtMailgunDomain.Text.ToText()
+		  MailgunX.MailgunApiKey = txtMailgunApiKey.Text.ToText()
+		  MailgunX.MailgunDomain = txtMailgunDomain.Text.ToText()
 		  
 		  
 		End Sub
