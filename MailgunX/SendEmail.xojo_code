@@ -4,7 +4,7 @@ Inherits Thread
 	#tag Event
 		Sub Run()
 		  // Verify that we have a Mailgun API Key and Domain set.
-		  If (MailgunApiKey = "" Or MailgunDomain = "") Then
+		  If (MailgunX.MailgunApiKey = "" Or MailgunX.MailgunDomain = "") Then
 		    Dim _exception As New RuntimeException
 		    _exception.Message = "Missing Mailgun API key and/or Mailgun domain."
 		    Error(_exception)
